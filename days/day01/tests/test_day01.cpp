@@ -1,7 +1,6 @@
+#include "day01.h"
 #include <gtest/gtest.h>
 #include <filesystem>
-#include "day01.h"
-
 
 TEST(day01, testSolution1) {
     std::vector<std::string> test_input {
@@ -20,7 +19,6 @@ TEST(day01, testSolution1) {
     EXPECT_EQ(getTopThreeCalories(expected), expectedTopThree);
     EXPECT_EQ(getCaloriesSum(expectedTopThree), 45000);
 }
-
 
 
 int main(int argc, char* argv[]) {

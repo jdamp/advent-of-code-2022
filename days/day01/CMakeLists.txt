@@ -7,5 +7,5 @@ target_link_libraries(AOCDay01 day01lib aocUtils)
 
 add_executable(AOCDay01_Test tests/test_day01.cpp)
 target_include_directories(AOCDay01_Test PRIVATE include)
-target_link_libraries(AOCDay01_Test GTest::GTest day01lib)
+target_link_libraries(AOCDay01_Test GTest::gtest_main day01lib)
 add_test(Day01Tests AOCDay01_Test)

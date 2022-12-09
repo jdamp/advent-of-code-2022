@@ -56,9 +56,3 @@ TEST_F(RockPaperScissorTest, Day02) {
     ASSERT_EQ(solveDay02(gamesPart1), 15);
     ASSERT_EQ(solveDay02(gamesPart2), 12);
 }
-
-
-int main(int argc, char** argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

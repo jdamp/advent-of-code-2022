@@ -6,5 +6,5 @@ add_executable(AOCDay02 main.cpp)
 target_link_libraries(AOCDay02 day02lib)
 
 add_executable(AOCDay02_Test test_day02.cpp)
-target_link_libraries(AOCDay02_Test GTest::GTest day02lib)
+target_link_libraries(AOCDay02_Test GTest::gtest_main day02lib)
 add_test(Day02Tests AOCDay02_Test)

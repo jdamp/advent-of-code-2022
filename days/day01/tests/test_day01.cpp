@@ -18,9 +18,3 @@ TEST(day01, testSolution1) {
     EXPECT_EQ(getTopThreeCalories(expected), expectedTopThree);
     EXPECT_EQ(getCaloriesSum(expectedTopThree), 45000);
 }
-
-
-int main(int argc, char* argv[]) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

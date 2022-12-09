@@ -10,8 +10,3 @@ TEST(AOCToolsTest, split) {
     std::vector<std::string> strParts2{"xxx", "yyy", "zzz"};
     ASSERT_EQ(AOCTools::splitString(testStr2, "+"), strParts2);
 }
-
-int main(int argc, char** argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}

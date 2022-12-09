@@ -1,6 +1,5 @@
 #include "day01.h"
 #include <gtest/gtest.h>
-#include <filesystem>
 
 TEST(day01, testSolution1) {
     std::vector<std::string> test_input {

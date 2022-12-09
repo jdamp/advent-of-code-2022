@@ -1,5 +1,5 @@
 add_library(day01lib include/day01.h src/day01.cpp)
-target_include_directories(day01lib PRIVATE include)
+target_include_directories(day01lib PRIVATE include ../../include)
 
 add_executable(AOCDay01 main.cpp)
 target_include_directories(AOCDay01 PRIVATE ../../include)

@@ -16,7 +16,8 @@ include_directories(${GTEST_INCLUDE_DIRS})
 file(GLOB HELP_INCLUDE "include/*.h")
 file(GLOB HELP_SRC "src/*.cpp")
 add_library(aocUtils SHARED ${HELP_INCLUDE} ${HELP_SRC})
-target_include_directories(aocUtils PRIVATE include)
+include_directories(./include)
+add_subdirectory(tests)
 
 # Add all subdirectories named "days/dayxx" as subdirectories
 MESSAGE(PWD=${CMAKE_CURRENT_SOURCE_DIR})

@@ -1,4 +1,4 @@
-add_library(day03lib day03.hpp)
+add_library(day03lib day03.hpp day03.cpp)
 target_link_libraries(day03lib aocUtils)
 set_target_properties(day03lib PROPERTIES LINKER_LANGUAGE CXX)
 
